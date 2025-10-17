@@ -52,6 +52,23 @@
                 font-style: italic;
             }
 
+            .right-col {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .multi-group {
+                padding-right: 10rem;
+            }
+
+            .center-fixing {
+                justify-content: center;
+            }
+
+            .examples {
+                font-size: 1rem;
+            }
+
             @media (min-width: 480px) {
                 .body-wrap {
                     display: flex;
@@ -61,9 +78,10 @@
                 .vowel-wrap {
                     display: flex;
                     justify-content: space-around;
+                    align-items: center;
                 }
                 
-                .phonetic-groups {
+                .right-col {
                     padding-left: 2rem;
                 }
 
@@ -74,6 +92,10 @@
 
                 .hidden {
                     display: none;
+                }
+
+                .center-fixing {
+                    justify-content: center;
                 }
             }
 
@@ -96,300 +118,560 @@
         <div class="body-wrap">
             <div class="vowel-wrap" id="vowel-1">
                 <p class="vowel">ា</p>
-                <div class="phonetic-groups">
-                    <div class="group-1">
-                        <h3>Group 1 - "-aw"</h3>
-                        <p class="phonetic">/aah/</p>
+                <div class="right-col">
+                    <div class="phonetic-groups">
+                        <div class="group-1">
+                            <h3>Group 1 - "-aw"</h3>
+                            <p class="phonetic">/aah/</p>
+                        </div>
+                        <div>
+                            <h3>Group 2 - "-er"</h3>
+                            <p class="phonetic">/ia/</p>
+                        </div>
                     </div>
-                    <div>
-                        <h3>Group 2 - "-er"</h3>
-                        <p class="phonetic">/ia/</p>
+                    <div class="phonetic-groups">
+                        <div class="group-1">
+                            <h3>Group 1 - Examples</h3>
+                            <p class="examples">ចា, ឆា, តា</p>
+                        </div>
+                        <div class="group-2">
+                            <h3>Group 2 - Examples</h3>
+                            <p class="examples">វា,ទា</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="vowel-wrap" id="vowel-2">
                 <p class="vowel">ិ</p>
-                <div class="phonetic-groups">
-                    <div class="group-1">
-                        <h3>Group 1 - "-aw"</h3>
-                        <p class="phonetic">/aik/</p>
+                <div class="right-col">
+                    <div class="phonetic-groups">
+                        <div class="group-1">
+                            <h3>Group 1 - "-aw"</h3>
+                            <p class="phonetic">/aik/</p>
+                        </div>
+                        <div>
+                            <h3>Group 2 - "-er"</h3>
+                            <p class="phonetic">/ik/</p>
+                        </div>
                     </div>
-                    <div>
-                        <h3>Group 2 - "-er"</h3>
-                        <p class="phonetic">/ik/</p>
+                    <div class="phonetic-groups">
+                        <div class="group-1">
+                            <h3>Group 1 - Examples</h3>
+                            <p class="examples">បិច</p>
+                        </div>
+                        <div class="group-2">
+                            <h3>Group 2 - Examples</h3>
+                            <p class="examples">ទិញ</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="vowel-wrap" id="vowel-3">
                 <p class="vowel">ី</p>
-                <div class="phonetic-groups">
-                    <div class="group-1">
-                        <h3>Group 1 - "-aw"</h3>
-                        <p class="phonetic">/ey/</p>
+                <div class="right-col">
+                    <div class="phonetic-groups">
+                        <div class="group-1">
+                            <h3>Group 1 - "-aw"</h3>
+                            <p class="phonetic">/ey/</p>
+                        </div>
+                        <div>
+                            <h3>Group 2 - "-er"</h3>
+                            <p class="phonetic">/ii/</p>
+                        </div>
                     </div>
-                    <div>
-                        <h3>Group 2 - "-er"</h3>
-                        <p class="phonetic">/ii/</p>
+                    <div class="phonetic-groups">
+                        <div class="group-1">
+                            <h3>Group 1 - Examples</h3>
+                            <p class="examples">បិច, បី, ដី</p>
+                        </div>
+                        <div class="group-2">
+                            <h3>Group 2 - Examples</h3>
+                            <p class="examples">ជី, ពីរ, មី</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="vowel-wrap" id="vowel-4">
                 <p class="vowel">ឹ</p>
-                <div class="phonetic-groups">
-                    <div class="group-1">
-                        <h3>Group 1 - "-aw"</h3>
-                        <p class="phonetic">/uhk/</p>
+                <div class="right-col">
+                    <div class="phonetic-groups">
+                        <div class="group-1">
+                            <h3>Group 1 - "-aw"</h3>
+                            <p class="phonetic">/uhk/</p>
+                        </div>
+                        <div>
+                            <h3>Group 2 - "-er"</h3>
+                            <p class="phonetic">/uhk/</p>
+                        </div>
                     </div>
-                    <div>
-                        <h3>Group 2 - "-er"</h3>
-                        <p class="phonetic">/uhk/</p>
+                    <div class="phonetic-groups">
+                        <div class="multi-group">
+                            <h3>Both Groups Examples</h3>
+                            <p class="examples">នឹង, ទឹក, ដឹង, ថឹក</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="vowel-wrap" id="vowel-5">
                 <p class="vowel">ឺ</p>
-                <div class="phonetic-groups">
-                    <div class="group-1">
-                        <h3>Group 1 - "-aw"</h3>
-                        <p class="phonetic">/eu/</p>
+                <div class="right-col">
+                    <div class="phonetic-groups">
+                        <div class="group-1">
+                            <h3>Group 1 - "-aw"</h3>
+                            <p class="phonetic">/eu/</p>
+                        </div>
+                        <div>
+                            <h3>Group 2 - "-er"</h3>
+                            <p class="phonetic">/oeu/</p>
+                        </div>
                     </div>
-                    <div>
-                        <h3>Group 2 - "-er"</h3>
-                        <p class="phonetic">/oeu/</p>
+                    <div class="phonetic-groups">
+                        <div class="group-1">
+                            <h3>Group 1 - Examples</h3>
+                            <p class="examples">កឺ</p>
+                        </div>
+                        <div class="group-2">
+                            <h3>Group 2 - Examples</h3>
+                            <p class="examples">គឺ, ឈឺ, ឌឺ, លឺ</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="vowel-wrap" id="vowel-6">
                 <p class="vowel">ុ</p>
-                <div class="phonetic-groups">
-                    <div class="group-1">
-                        <h3>Group 1 - "-aw"</h3>
-                        <p class="phonetic">/ohk/</p>
+                <div class="right-col">
+                    <div class="phonetic-groups">
+                        <div class="group-1">
+                            <h3>Group 1 - "-aw"</h3>
+                            <p class="phonetic">/ohk/</p>
+                        </div>
+                        <div>
+                            <h3>Group 2 - "-er"</h3>
+                            <p class="phonetic">/uk/</p>
+                        </div>
                     </div>
-                    <div>
-                        <h3>Group 2 - "-er"</h3>
-                        <p class="phonetic">/uk/</p>
+                    <div class="phonetic-groups">
+                        <div class="group-1">
+                            <h3>Group 1 - Examples</h3>
+                            <p class="examples">កុន, តុ</p>
+                        </div>
+                        <div class="group-2">
+                            <h3>Group 2 - Examples</h3>
+                            <p class="examples">ឆ្នេរសមុទ្រ</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="vowel-wrap" id="vowel-7">
                 <p class="vowel">ូ</p>
-                <div class="phonetic-groups">
-                    <div class="group-1">
-                        <h3>Group 1 - "-aw"</h3>
-                        <p class="phonetic">/oh/</p>
+                <div class="right-col">
+                    <div class="phonetic-groups">
+                        <div class="group-1">
+                            <h3>Group 1 - "-aw"</h3>
+                            <p class="phonetic">/oh/</p>
+                        </div>
+                        <div>
+                            <h3>Group 2 - "-er"</h3>
+                            <p class="phonetic">/oo/</p>
+                        </div>
                     </div>
-                    <div>
-                        <h3>Group 2 - "-er"</h3>
-                        <p class="phonetic">/oo/</p>
+                    <div class="phonetic-groups">
+                        <div class="group-1">
+                            <h3>Group 1 - Examples</h3>
+                            <p class="examples">កូរ, ចូល, ដូរ</p>
+                        </div>
+                        <div class="group-2">
+                            <h3>Group 2 - Examples</h3>
+                            <p class="examples">គូ, គូរ, ជូរ, ពូ, យូរ</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="vowel-wrap" id="vowel-8">
                 <p class="vowel">ួ</p>
-                <div class="phonetic-groups">
-                    <div class="group-1">
-                        <h3>Group 1 - "-aw"</h3>
-                        <p class="phonetic">/ua/</p>
+                <div class="right-col">
+                    <div class="phonetic-groups">
+                        <div class="group-1">
+                            <h3>Group 1 - "-aw"</h3>
+                            <p class="phonetic">/ua/</p>
+                        </div>
+                        <div>
+                            <h3>Group 2 - "-er"</h3>
+                            <p class="phonetic">/ua/</p>
+                        </div>
                     </div>
-                    <div>
-                        <h3>Group 2 - "-er"</h3>
-                        <p class="phonetic">/ua/</p>
+                    <div class="phonetic-groups">
+                        <div class="multi-group">
+                            <h3>Both Group Examples</h3>
+                            <p class="examples">ខួរ, សួរ, គួរ, ជួរ, យួរ</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="vowel-wrap" id="vowel-9">
                 <p class="vowel">ើ</p>
-                <div class="phonetic-groups">
-                    <div class="group-1">
-                        <h3>Group 1 - "-aw"</h3>
-                        <p>aeu/</p>
+                <div class="right-col">
+                    <div class="phonetic-groups">
+                        <div class="group-1">
+                            <h3>Group 1 - "-aw"</h3>
+                            <p class="phonetic">/aeu/</p>
+                        </div>
+                        <div>
+                            <h3>Group 2 - "-er"</h3>
+                            <p class="phonetic">/eu/</p>
+                        </div>
                     </div>
-                    <div>
-                        <h3>Group 2 - "-er"</h3>
-                        <p class="phonetic">/aeu/</p>
+                    <div class="phonetic-groups">
+                        <div class="group-1">
+                            <h3>Group 1 - Examples</h3>
+                            <p class="examples">ដើរ, កើ, ហើរ</p>
+                        </div>
+                        <div class="group-2">
+                            <h3>Group 2 - Examples</h3>
+                            <p class="examples">លើ</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="vowel-wrap" id="vowel-10">
                 <p class="vowel">ឿ</p>
-                <div class="phonetic-groups">
-                    <div class="group-1">
-                        <h3>Group 1 - "-aw"</h3>
-                        <p class="phonetic">/uer/</p>
+                <div class="right-col">
+                    <div class="phonetic-groups">
+                        <div class="group-1">
+                            <h3>Group 1 - "-aw"</h3>
+                            <p class="phonetic">/uer/</p>
+                        </div>
+                        <div>
+                            <h3>Group 2 - "-er"</h3>
+                            <p class="phonetic">/uer/</p>
+                        </div>
                     </div>
-                    <div>
-                        <h3>Group 2 - "-er"</h3>
-                        <p class="phonetic">/uer/</p>
+                    <div class="phonetic-groups">
+                        <div class="group-1">
+                            <h3>Group 1 - Examples</h3>
+                            <p class="examples">តៀ</p>
+                        </div>
+                        <div class="group-2">
+                            <h3>Group 2 - Examples</h3>
+                            <p class="examples">ជឿ</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="vowel-wrap" id="vowel-11">
                 <p class="vowel">ៀ</p>
-                <div class="phonetic-groups">
-                    <div class="group-1">
-                        <h3>Group 1 - "-aw"</h3>
-                        <p class="phonetic">/ia/</p>
+                <div class="right-col">
+                    <div class="phonetic-groups">
+                        <div class="group-1">
+                            <h3>Group 1 - "-aw"</h3>
+                            <p class="phonetic">/ia/</p>
+                        </div>
+                        <div>
+                            <h3>Group 2 - "-er"</h3>
+                            <p class="phonetic">/ia/</p>
+                        </div>
                     </div>
-                    <div>
-                        <h3>Group 2 - "-er"</h3>
-                        <p class="phonetic">/ia/</p>
+                    <div class="phonetic-groups">
+                        <div class="multi-group">
+                            <h3>Both Groups Examples</h3>
+                            <p class="examples">កៀ, បៀ</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="vowel-wrap" id="vowel-12">
                 <p class="vowel">េ</p>
-                <div class="phonetic-groups">
-                    <div class="group-1">
-                        <h3>Group 1 - "-aw"</h3>
-                        <p class="phonetic">/ay/</p>
+                <div class="right-col">
+                    <div class="phonetic-groups">
+                        <div class="group-1">
+                            <h3>Group 1 - "-aw"</h3>
+                            <p class="phonetic">/ay/</p>
+                        </div>
+                        <div>
+                            <h3>Group 2 - "-er"</h3>
+                            <p class="phonetic">/ay/</p>
+                        </div>
                     </div>
-                    <div>
-                        <h3>Group 2 - "-er"</h3>
-                        <p class="phonetic">/ay/</p>
+                    <div class="phonetic-groups">
+                        <div class="group-1">
+                            <h3>Group 1 - Examples</h3>
+                            <p class="examples">តេ</p>
+                        </div>
+                        <div class="group-2">
+                            <h3>Group 2 - Examples</h3>
+                            <p class="examples">គេ, ជេរ, ទេ, មេ</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="vowel-wrap" id="vowel-13">
                 <p class="vowel">ែ</p>
-                <div class="phonetic-groups">
-                    <div class="group-1">
-                        <h3>Group 1 - "-aw"</h3>
-                        <p class="phonetic">/ai/</p>
+                <div class="right-col">
+                    <div class="phonetic-groups">
+                        <div class="group-1">
+                            <h3>Group 1 - "-aw"</h3>
+                            <p class="phonetic">/ai/</p>
+                        </div>
+                        <div>
+                            <h3>Group 2 - "-er"</h3>
+                            <p class="phonetic">/eh/</p>
+                        </div>
                     </div>
-                    <div>
-                        <h3>Group 2 - "-er"</h3>
-                        <p class="phonetic">/eh/</p>
+                    <div class="phonetic-groups">
+                        <div class="group-1">
+                            <h3>Group 1 - Examples</h3>
+                            <p class="examples">កែ, ខែ, ចែ, តែ</p>
+                        </div>
+                        <div class="group-2">
+                            <h3>Group 2 - Examples</h3>
+                            <p class="examples">កន្លែង</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="vowel-wrap" id="vowel-14">
                 <p class="vowel">ៃ</p>
-                <div class="phonetic-groups">
-                    <div class="group-1">
-                        <h3>Group 1 - "-aw"</h3>
-                        <p class="phonetic">/aiy/</p>
+                <div class="right-col">
+                    <div class="phonetic-groups">
+                        <div class="group-1">
+                            <h3>Group 1 - "-aw"</h3>
+                            <p class="phonetic">/aiy/</p>
+                        </div>
+                        <div>
+                            <h3>Group 2 - "-er"</h3>
+                            <p class="phonetic">/ey/</p>
+                        </div>
                     </div>
-                    <div>
-                        <h3>Group 2 - "-er"</h3>
-                        <p class="phonetic">/ey/</p>
+                    <div class="phonetic-groups">
+                        <div class="group-1">
+                            <h3>Group 1 - Examples</h3>
+                            <p class="examples">ចៃ, ដៃ</p>
+                        </div>
+                        <div class="group-2">
+                            <h3>Group 2 - Examples</h3>
+                            <p class="examples">ព្រៃ</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="vowel-wrap" id="vowel-15">
                 <p class="vowel">ោ</p>
-                <div class="phonetic-groups">
-                    <div class="group-1">
-                        <h3>Group 1 - "-aw"</h3>
-                        <p class="phonetic">/ow/</p>
+                <div class="right-col">
+                    <div class="phonetic-groups">
+                        <div class="group-1">
+                            <h3>Group 1 - "-aw"</h3>
+                            <p class="phonetic">/ow/</p>
+                        </div>
+                        <div>
+                            <h3>Group 2 - "-er"</h3>
+                            <p class="phonetic">/ooh/</p>
+                        </div>
                     </div>
-                    <div>
-                        <h3>Group 2 - "-er"</h3>
-                        <p class="phonetic">/ooh/</p>
+                    <div class="phonetic-groups">
+                        <div class="group-1">
+                            <h3>Group 1 - Examples</h3>
+                            <p class="examples">កោ, ខោ, ចោរ, ចោល, តោ</p>
+                        </div>
+                        <div class="group-2">
+                            <h3>Group 2 - Examples</h3>
+                            <p class="examples">គោ, ជោរ</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="vowel-wrap" id="vowel-16">
                 <p class="vowel">ៅ</p>
-                <div class="phonetic-groups">
-                    <div class="group-1">
-                        <h3>Group 1 - "-aw"</h3>
-                        <p class="phonetic">/aow/</p>
+                <div class="right-col">
+                    <div class="phonetic-groups">
+                        <div class="group-1">
+                            <h3>Group 1 - "-aw"</h3>
+                            <p class="phonetic">/aow/</p>
+                        </div>
+                        <div>
+                            <h3>Group 2 - "-er"</h3>
+                            <p class="phonetic">/ouw/</p>
+                        </div>
                     </div>
-                    <div>
-                        <h3>Group 2 - "-er"</h3>
-                        <p class="phonetic">/ouw/</p>
+                    <div class="phonetic-groups">
+                        <div class="group-1">
+                            <h3>Group 1 - Examples</h3>
+                            <p class="examples">ចៅ, ឆៅ, ហៅ, បៅ</p>
+                        </div>
+                        <div class="group-2">
+                            <h3>Group 2 - Examples</h3>
+                            <p class="examples">ទៅ, នៅ</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="vowel-wrap" id="vowel-17">
                 <p class="vowel">ុំ</p>
-                <div class="phonetic-groups">
-                    <div class="group-1">
-                        <h3>Group 1 - "-aw"</h3>
-                        <p class="phonetic">/ohm/</p>
+                <div class="right-col">
+                    <div class="phonetic-groups">
+                        <div class="group-1">
+                            <h3>Group 1 - "-aw"</h3>
+                            <p class="phonetic">/ohm/</p>
+                        </div>
+                        <div>
+                            <h3>Group 2 - "-er"</h3>
+                            <p class="phonetic">/ohm/</p>
+                        </div>
                     </div>
-                    <div>
-                        <h3>Group 2 - "-er"</h3>
-                        <p class="phonetic">/ohm/</p>
+                    <div class="phonetic-groups">
+                        <div class="multi-group">
+                            <h3>Both Groups Examples</h3>
+                            <p class="examples">កំុ, គំុ, ឃំុ, ជំុ, ដំុ, សំុ, ទំុ</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="vowel-wrap" id="vowel-18">
                 <p class="vowel">ំ</p>
-                <div class="phonetic-groups">
-                    <div class="group-1">
-                        <h3>Group 1 - "-aw"</h3>
-                        <p class="phonetic">/owm/</p>
+                <div class="right-col">
+                    <div class="phonetic-groups">
+                        <div class="group-1">
+                            <h3>Group 1 - "-aw"</h3>
+                            <p class="phonetic">/owm/</p>
+                        </div>
+                        <div>
+                            <h3>Group 2 - "-er"</h3>
+                            <p class="phonetic">/uehm/</p>
+                        </div>
                     </div>
-                    <div>
-                        <h3>Group 2 - "-er"</h3>
-                        <p class="phonetic">/uehm/</p>
+                    <div class="phonetic-groups">
+                        <div class="group-1">
+                            <h3>Group 1 - Examples</h3>
+                            <p class="examples">ខំ, ធំ</p>
+                        </div>
+                        <div class="group-2">
+                            <h3>Group 2 - Examples</h3>
+                            <p class="examples">នំ, យំ</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="vowel-wrap" id="vowel-19">
                 <p class="vowel">ាំ</p>
-                <div class="phonetic-groups">
-                    <div class="group-1">
-                        <h3>Group 1 - "-aw"</h3>
-                        <p class="phonetic">/am/</p>
+                <div class="right-col">
+                    <div class="phonetic-groups">
+                        <div class="group-1">
+                            <h3>Group 1 - "-aw"</h3>
+                            <p class="phonetic">/am/</p>
+                        </div>
+                        <div>
+                            <h3>Group 2 - "-er"</h3>
+                            <p class="phonetic">/oarm/</p>
+                        </div>
                     </div>
-                    <div>
-                        <h3>Group 2 - "-er"</h3>
-                        <p class="phonetic">/oarm/</p>
+                    <div class="phonetic-groups">
+                        <div class="group-1">
+                            <h3>Group 1 - Examples</h3>
+                            <p class="examples">កាំ, ខាំ, ចាំ, ដាំ</p>
+                        </div>
+                        <div class="group-2">
+                            <h3>Group 2 - Examples</h3>
+                            <p class="examples">ជាំ, រាំ</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="vowel-wrap" id="vowel-20">
                 <p class="vowel">ះ</p>
-                <div class="phonetic-groups">
-                    <div class="group-1">
-                        <h3>Group 1 - "-aw"</h3>
-                        <p class="phonetic">/ah/</p>
+                <div class="right-col">
+                    <div class="phonetic-groups">
+                        <div class="group-1">
+                            <h3>Group 1 - "-aw"</h3>
+                            <p class="phonetic">/ah/</p>
+                        </div>
+                        <div>
+                            <h3>Group 2 - "-er"</h3>
+                            <p class="phonetic">/eah/</p>
+                        </div>
                     </div>
-                    <div>
-                        <h3>Group 2 - "-er"</h3>
-                        <p class="phonetic">/eah/</p>
+                    <div class="phonetic-groups">
+                        <div class="group-1">
+                            <h3>Group 1 - Examples</h3>
+                            <p class="examples">យន្តហោះ</p>
+                        </div>
+                        <div class="group-2">
+                            <h3>Group 2 - Examples</h3>
+                            <p class="examples">ទះ, រះ, វះ</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="vowel-wrap" id="vowel-21">
                 <p class="vowel">ុះ</p>
-                <div class="phonetic-groups">
-                    <div class="group-1">
-                        <h3>Group 1 - "-aw"</h3>
-                        <p class="phonetic">/ohh/</p>
+                <div class="right-col">
+                    <div class="phonetic-groups">
+                        <div class="group-1">
+                            <h3>Group 1 - "-aw"</h3>
+                            <p class="phonetic">/ohh/</p>
+                        </div>
+                        <div>
+                            <h3>Group 2 - "-er"</h3>
+                            <p class="phonetic">/oeh/</p>
+                        </div>
                     </div>
-                    <div>
-                        <h3>Group 2 - "-er"</h3>
-                        <p class="phonetic">/oeh/</p>
+                    <div class="phonetic-groups">
+                        <div class="group-1">
+                            <h3>Group 1 - Examples</h3>
+                            <p class="examples">ចុះ, ដុះ</p>
+                        </div>
+                        <div class="group-2">
+                            <h3>Group 2 - Examples</h3>
+                            <p class="examples">ជុះ</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="vowel-wrap" id="vowel-22">
                 <p class="vowel">េះ</p>
-                <div class="phonetic-groups">
-                    <div class="group-1">
-                        <h3>Group 1 - "-aw"</h3>
-                        <p class="phonetic">/eh/</p>
+                <div class="right-col">
+                    <div class="phonetic-groups">
+                        <div class="group-1">
+                            <h3>Group 1 - "-aw"</h3>
+                            <p class="phonetic">/eh/</p>
+                        </div>
+                        <div>
+                            <h3>Group 2 - "-er"</h3>
+                            <p class="phonetic">/ih/</p>
+                        </div>
                     </div>
-                    <div>
-                        <h3>Group 2 - "-er"</h3>
-                        <p class="phonetic">/ih/</p>
+                    <div class="phonetic-groups">
+                        <div class="group-1">
+                            <h3>Group 1 - Examples</h3>
+                            <p class="examples">កេះ, ចេះ, ឆេះ, បេះ, សេះ, ឣេះ</p>
+                        </div>
+                        <div class="group-2">
+                            <h3>Group 2 - Examples</h3>
+                            <p class="examples">នេះ</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="vowel-wrap" id="vowel-23">
                 <p class="vowel">េាះ</p>
-                <div class="phonetic-groups">
-                    <div class="group-1">
-                        <h3>Group 1 - "-aw"</h3>
-                        <p class="phonetic">/awh/</p>
+                <div class="right-col">
+                    <div class="phonetic-groups">
+                        <div class="group-1">
+                            <h3>Group 1 - "-aw"</h3>
+                            <p class="phonetic">/awh/</p>
+                        </div>
+                        <div>
+                            <h3>Group 2 - "-er"</h3>
+                            <p class="phonetic">/uah/</p>
+                        </div>
                     </div>
-                    <div>
-                        <h3>Group 2 - "-er"</h3>
-                        <p class="phonetic">/uah/</p>
+                    <div class="phonetic-groups">
+                        <div class="group-1">
+                            <h3>Group 1 - Examples</h3>
+                            <p class="examples">កោះ, ដោះ, បោះ, ហោះ</p>
+                        </div>
+                        <div class="group-2">
+                            <h3>Group 2 - Examples</h3>
+                            <p class="examples">គោះ, នោះ, ពោះ</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -403,10 +685,18 @@
                     if (element.classList.contains('hidden'))
                     {
                         element.classList.remove('hidden');
+                        var vowelWraps = document.querySelectorAll('div.vowel-wrap');
+                        vowelWraps.forEach(vowelWrap => {
+                            vowelWrap.classList.remove('center-fixing');
+                        });
                     }
                     else
                     {
                         element.classList.add('hidden');
+                        var vowelWraps = document.querySelectorAll('div.vowel-wrap');
+                        vowelWraps.forEach(vowelWrap => {
+                            vowelWrap.classList.add('center-fixing');
+                        });
                     }
                 });
             }
